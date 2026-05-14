@@ -1,11 +1,46 @@
-<div align="center">
+# FinTrack - Expense Manager
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, responsive Progressive Web App (PWA) for managing daily expenses and income. Built with React, Tailwind CSS, and Firebase.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Expense Tracking**: Log and categorize your spending.
+- **Income Management**: Keep track of your earnings.
+- **Visual Analytics**: Dynamic charts and progress bars.
+- **PWA Ready**: Install it on your phone like a native app.
+- **Cloud Sync**: Securely store your data using Firebase.
+- **Export**: Download your data in CSV format.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- **Frontend**: React 18, Vite, Tailwind CSS
+- **Animations**: Framer Motion
+- **Database/Auth**: Firebase & Firestore
+- **Icons**: Lucide React
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Local Development
 
-</div>
+1. **Clone the repository**:
+   ```bash
+   git clone <your-repo-url>
+   cd <repo-folder>
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**:
+   Create a `.env` file with your Firebase and Gemini API keys (see `.env.example`).
+
+4. **Run development server**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+## Deployment
+This app is designed to be hosted on platforms like **Vercel**, **Netlify**, or **Firebase Hosting**.

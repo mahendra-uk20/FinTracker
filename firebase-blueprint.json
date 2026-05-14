@@ -1,0 +1,57 @@
+{
+  "entities": {
+    "Expense": {
+      "title": "Expense",
+      "description": "Record of a daily expense",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "date": { "type": "string", "format": "date-time" },
+        "item": { "type": "string" },
+        "amount": { "type": "number" },
+        "category": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "date", "item", "amount", "category", "createdAt"]
+    },
+    "Income": {
+      "title": "Income",
+      "description": "Record of an income source",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "date": { "type": "string", "format": "date-time" },
+        "source": { "type": "string" },
+        "amount": { "type": "number" },
+        "category": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "date", "source", "amount", "category", "createdAt"]
+    },
+    "IncomeCategory": {
+      "title": "Income Category",
+      "description": "Custom income category for users",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "name", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/expenses/{expenseId}": {
+      "schema": "Expense",
+      "description": "Daily expenses for users"
+    },
+    "/income/{incomeId}": {
+      "schema": "Income",
+      "description": "Income sources for users"
+    },
+    "/incomeCategories/{categoryId}": {
+      "schema": "IncomeCategory",
+      "description": "Custom income categories for users"
+    }
+  }
+}
