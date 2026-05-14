@@ -1,5 +1,7 @@
 # FinTrack - Expense Manager
 
+**Live App: [https://ais-pre-zvqxnxipb7tu26c4ppvxlh-684095037392.asia-southeast1.run.app](https://ais-pre-zvqxnxipb7tu26c4ppvxlh-684095037392.asia-southeast1.run.app)**
+
 A modern, responsive Progressive Web App (PWA) for managing daily expenses and income. Built with React, Tailwind CSS, and Firebase.
 
 ## Features
